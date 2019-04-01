@@ -17,7 +17,7 @@ if(!empty($username)){
             die('connect Error('.mysqli_connect_errno().')'.mysqli_connect_error());
         }
         else{
-            $sql = "INSERT INTO account (username,password)
+            $sql = "INSERT INTO list (username,password)
             Values ('$username','$password')";
             if($conn->query($sql)){
                 echo "<h1 style='color:red'>New record is inserted successfully</h1>";
@@ -37,7 +37,10 @@ else{
     echo "UserName should not empty";
     die();
 }
-}
+}  
+
+   //  delete button
+
 if (isset($_POST['delname'])){
     $delname = $_POST['delname'];
     
