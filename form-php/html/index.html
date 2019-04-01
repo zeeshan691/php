@@ -6,8 +6,7 @@
 <meta charset="utf-8">
 <title>Untitled Document</title>
     <style>
-        .perent{
-            background-color: red ;            
+        .perent{           
             width: 100%;
             height: auto;
         }
@@ -15,15 +14,27 @@
 /*            margin: auto;*/
             width: 100%;
             height: auto;
-            background-color: red;
             text-align: center;
             margin-top: 20%;
         }
         .form-control{
-            width: 30%;
+            width: 20%;
             
         }
-    
+/*
+        .ul_li > li{
+            text-decoration: none;
+            line-height: 5vw;
+            border: 1px solid;
+            width: 20%;
+            list-style-type: none;
+            color: black;
+        }
+        .ul_li >li:hover{
+            cursor: pointer;
+            background-color: blue;
+        }
+*/
     </style>
 </head>
 
@@ -31,11 +42,23 @@
     <div class="perent">
     <form action="../php/auth.php" method="post">
         <h4>Username</h4>
-     <input class="form-control m-auto" type="text" name="username" placeholder="UserName">
-        <h4>Password</h4>
-    <input class="form-control m-auto" type="password" name="password" placeholder="Password"><br>
+     <input class="form-control m-auto" type="text" name="username" placeholder="UserName" required>
+        <h4>Password</h4> 
+    <input class="form-control m-auto" type="password" name="password" placeholder="Password" required><br>
         <input class="btn-dark m-auto" type="submit" value="Submit">
     </form>
-    </div>    
+<!--
+        
+    <div>
+        <ul class="ul_li">
+          <li><a href="add.php">Add</a></li>
+          <li><a href="del.php">Delete</a></li>
+          <li><a href="upd.php">Update</a></li>
+        </ul>
+    </div>
+-->
+    </div>  
+    
+
 </body>
 </html>

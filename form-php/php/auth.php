@@ -17,7 +17,7 @@ if(!empty($username)){
             die('connect Error('.mysqli_connect_errno().')'.mysqli_connect_error());
         }
         else{
-            $sql = "INSERT INTO list (username,password)
+            $sql = "INSERT INTO list (username,password) 
             Values ('$username','$password')";
             if($conn->query($sql)){
                 echo "<h1 style='color:red'>New record is inserted successfully</h1>";
